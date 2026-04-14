@@ -1,0 +1,35 @@
+
+#configure user name
+$ git config --global user.name "gcs2k5"
+
+#configure email address
+$ git config --global user.email "gcs2k5@gmail.com"
+
+#What we config in Git
+$ git config --list
+
+# To clone from remote to local
+git clone https://github.com/gcs2k5/Git-repo.git
+
+
+#git status is used to see the status
+git status
+
+#git status types
+ u = untracked = new file that git did not track
+ m = modified = changed
+ s= staged = file is ready for commit
+ unmodified = unchanged
+
+ #git add :- add new or changed file in your working directory to the git staging area
+ git add <filename>
+
+ #if there are multile file and we use git dot (.) command
+ git add .    
+
+#git commit :- it is used to record the change
+git commit -m "some message"
+
+
+#to update all the modification into git hub
+  git push origin main
