@@ -38,6 +38,8 @@ git commit -m "some message"
 
 git init  (To create a git repo in local)
 git status 
+git add .
+git commmit -m "modify"
 git remote add origin <link>
 git remote -v (to verify remote)
 git branch (to check the branch)
@@ -55,8 +57,44 @@ git branch -M main (To rename the brach)
 git checkout <-branchname>
 git checkout -b <-new branch name> #to create new branch
 git branch -d <-brach name> #To delete the branch
+#create a new brach
+git checkout -b feature1
+make a changes in new or existing file
+git add .
+git status
+git commit -m "add new tag"
+git push origin feature1 (to save modification into feature1)
 
-git pull origin main (to pull data from remote to local)
+#after push when we check our repo and check feature1 it will have modification but main branch do not have modification
+git diff main ( this command is used To check difference with main branch i.e. you should have exist modfiy branch)
+#Now to merge difference using graphically
+#go to git hub and full feature1 and merge changes
+#after that if we want to let come changes from remote to main
+
+git pull origin main (To match the contains)
+
+
+got to git 
+
+################### Merge conflct #############
+#if there is same modification in the same line then
+#got to main brach and make changes in html file and save it
+git push .
+git commit -m "add button"
+git checkout f2 #Now we need to make changes in index.html" after that run below commands
+git push .
+git commit -m "add dropdown"
+git diff main #To check the difference in f2 and main brach
+git merge main #To merge the differences b/w f2 and main brach#
+git status
+git add .
+git commit -m "Merge both feature or conflct"
+go to main branch and run merge
+git merge f2
+
+ 
+
+
 
 
 
