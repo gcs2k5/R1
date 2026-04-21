@@ -90,7 +90,7 @@ git status
 git add .
 git commit -m "Merge both feature or conflct"
 go to main branch and run merge
-git merge f2
+git merge 
 
  
 
@@ -109,3 +109,20 @@ Case 2 : commited changes (for one comming)
  Case3: commited changes (for many commits)
   git reset <-commit hash]>
   git reset --hard <-commit hash>
+  #make some  changes in main branch that should not be done i.e. delete button and save it
+#in this example we just add but not commit
+git add .
+git status
+git reset a.html
+git reset
+git restore
+# now we modified and commit
+git add .
+git status
+git commit -m "deleted test"
+git status
+git reset HEAD~1
+git status
+git log
+git reset 49156e120a11e3bd54cebdbf7c3b530e71ae9735  #git is hash
+git reset --hard 49156e120a11e3bd54cebdbf7c3b530e71ae973
